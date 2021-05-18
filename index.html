@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Java voortgang</title>
+    <link rel="icon" href="icons/logo.svg" />
+    <link rel="stylesheet" href="javastyle.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <p></p>
+      </nav>
+    </header>
+    <section class="bovenkant">
+      <div class="hero">
+        <p>Voortgang ontwikkeldoel: JavaScript</p>
+      </div>
+      <div class="tekstvak">
+        <p>Op deze website ziet u mijn voortgang wat betreft de cursus van JavaScript.
+          Ondertussen zijn er ook wat interactieve dingen te vinden in deze website
+          gecodeerd met JavaScript, waaraan te zien is dat ik er zeker wat van geleerd
+          heb en ik de basis in de praktijk zou kunnen toepassen. Deze website is per
+          hoofdstuk in CodeAcademy geordend. Ik weet het, het is niet de mooiste website,
+          maar ik had een beetje haast :)
+        </p>
+      </div>
+    </section>
+  <section class="hoofdstukken">
+    <div class="hoofdstuk">
+      <h3>Hoofdstuk 1: Introduction</h3>
+      <p>Zoals normaal, begon ik gewoon bij deel 1. Hier werd de basis van JavaScript uitgelegd, waaronder de code: console.log(…..).
+         Hier had ik weinig moeilijkheden mee. Op pagina 5 kwam er een stukje over rekenen, en ik vond dit erg interessant, want ik 
+         wist niet dat dat zo makkelijk kon met JavaScript! Grappig bij deze opdracht, vond ik dat er ook wat algemene kennis in 
+         verwerkt zat. Zo berekende je aan het einde hoeveel % helium er op de zon is. Dit was 27,08%. Dit is iets dat ik best grappig 
+         vond om te weten, want stel, wij als mensen konden op de zon staan klonken wij allemaal als chipmunks.</p>
+
+         <p>Hierna kon je woorden bij elkaar optellen om een zin te vormen. Dit vond ik ook best grappig, maar doordat je een spatie moet 
+           doen tussen een woord en een aanhalingsteken vond ik dit nog wel een beetje lastig. Ik zat namelijk elke keer 2 spaties te doen:
+            1 tussen het eerste woord en het laatste aanhalingsteken hiervan en 1 tussen het tweede woord en het eerste aanhalingsteken. Dit
+            werd een dubbele spatie. Ik heb er even over gedaan, maar ik begrijp hem. </p>
+            <p>
+          Bij opdracht 9 moest ik dingen opzoeken op het “Javascript Math Object”. Dit waren Math.ceil (kleinst mogelijke gehele getal printen 
+          die boven het ingevulde getal zit) en Number.isInteger, wat aangaf of het ingevulde nummer geheel is of niet. Ik vond dit wel ingewikkeld, 
+          omdat de vraagstelling een beetje onduidelijk was. 
+          </p>
+          <p>bij het tweede deel (variabelen) had ik gelijk het gevoel dat ik het lastiger zou vinden en dit was ook een beetje het geval.
+             Het was namelijk wel wat meer onthouden als in het vorige hoofdstuk. Zo ging het maken van een variabele door “var”, “let” en “const” wel prima,
+              maar ging het rekenen wel lastiger. Ik heb het over het schrijven van de sommen waarin een variabele staat. Zo is w=w+1 hetzelfde als w+=1. 
+              Ik vind deze volgorde best lastig, want het voelt totaal niet als hetzelfde als w=w+1. De opdracht ging goed, maar of ik het ga onthouden is een tweede. 
+            </p>
+
+            <p><strong>Zie aan het einde van dit hoofdstukje een gecodeerde rekenmachine!</strong></p>
+
+            <div class="projecten">
+              <p>Projecten:</p>
+            </div>
+          <p>De eerste opdracht ging over de temperatuur. Hier moest je doormiddel van sommen variabelen creëren. Dit is bijvoorbeeld
+            let fahrenheit= celsius * (9/5) + 32;
+            console.log(fahrenheit);
+            Op die manier maakte ik variabelen aan.
+            In het project had ik wel een beetje moeite met het terug graven naar het hoofdstuk van gisteren, dus ik heb hiervoor “get unstuck” moeten gebruiken.
+             Nu begreep ik het weer een beetje. Ik had nog wel een beetje moeite met de volgorde van bepaalde codes. 
+            </p>
+            <div class="foto">
+            <img src="h1code.png" width= 100%>
+            <img src="h1output.png" width = 100%>
+          </div>
+
+          <p>Het tweede project ging over mijn leeftijd in hondenjaren. Dit was wel te doen, maar ik vond opdracht 8 wel lastig. Ik moest de variabel van mijn naam maken,
+             maar ik moest er ook voor zorgen dat deze alleen maar kleine letters bevatte. Hiervan vond ik de volgorde lastig om te bepalen, maar met de hulp van “Get Unstuck” 
+             is het mij toch gelukt. </p>
+             <div class="foto">
+              <img src="h1code2.png" width= 100%>
+              <img src="h1output2.png" width = 100%>
+              </div>
+          
+          <p>Hierna deed ik de quiz waarin ik 10 van de 11 vragen goed had!</p>
+    </div>
+
+    <script src="rekenen.js" defer></script>
+
+<div class="rekenmachine">
+  <div class="rekenmachine2">
+  <h2>Rekenmachine:</h2>
+
+<input type="number" id="n1" placeholder="Nummer 1" step="10" /><br/>
+<input type="number" id="n2"placeholder="Nummer 2" step="10"/><br/>
+
+
+<select class="operators "id="operators">
+    <option value="+">+</option>
+    <option value="-">-</option>
+    <option value="/">/</option>
+    <option value="*">*</option>
+</select>
+
+<button onclick="calc();">=</button>
+<input type="text" id="output"/>
+
+</div>
+</div>
+
+    <div class="line">
+      <hr width=100%>
+    </div>
+
+    <div class="hoofdstuk">
+      <h3>Hoofdstuk 2: Conditionals</h3>
+      <p>In hoofdstuk 2 begon ik met de “if-statements”. Ik had geluk, want dit heb ik ook al voor een deel gehad toen ik de studie “Mechtatronica” volgde vorig jaar. Alsnog 
+        vond ik dit aan het begin best lastig, omdat je nu opeens weer met {} moest werken. Ik raakte er een beetje van in de war. Op een gegeven moment ging ik aan de slag met 
+        de “logical operators”. Dit is het gebruik van && (en), || (of) en ! (not). Ik vond dit wel te doen, maar ik vond het onthouden van het “gelijk aan” nog een beetje verwarrend. 
+        Dit zijn namelijk 3 gelijk aan tekens, maar ik had steeds de neiging om er 2 te doen waardoor ik een foutmelding kreeg. In opdracht 6 kreeg ik te maken met een andere soort. 
+        Dit keer ging het om “true” of “false”, maar dan op een andere manier. Onder “false” vielen de variabelen “0”, “ ”, “null”, “undefined” en “NaN”. De rest is allemaal true. 
+        Dit was voor mij na even goed lezen al snel duidelijk. </p>
+
+         <div class="projecten">
+          <p>Projecten:</p>
+        </div>
+          <p><p>Hierna was het tijd voor weer een nieuw project. Ik merkte gelijk dat ik het best lastig vond om alle theorie toe te kunnen passen. Zo had ik bij opdracht 2 al veel 
+            moeite en ik heb hiervoor ook de uitlegvideo gebruikt. Dit was gelukkig ter opheldering en uiteindelijk is het mij gelukt. Hierna heb ik een beetje ermee geprobeerd en 
+            het lukte allemaal. Voor de rest is dit project prima verlopen, al had ik nog wel wat moeite met waar ik precies een dubbele punt of een puntkomma moest plaatsen. 
+            Met een beetje oefening gaat dit wel lukken.
+            </p>
+            <div class="foto">
+            <img src="h2code.png" width= 100%>
+            <img src="h2output.png" width = 100%>
+          </div>
+
+          <p>
+            Project 2 van dit hoofdstuk ging over een hardloopwedstrijd. Ik merkte dat bij het variabelen maken, ik vaak aanhalingstekens gebruikte terwijl dit vaak niet hoeft. 
+            Uiteindelijk was het de bedoeling, dat ik een programma maakte die als output aangaf welk (random) racenummer diegene had. Dit was oa gebaseerd op of ze “early” waren 
+            of niet en hoe oud ze waren. Ik vond dit een erg leuk project en ik vond het ook niet te moeilijk. Zie hieronder mijn code en wat er gebeurde als ik ging runnen:
+             </p>
+             <div class="foto">
+              <img src="h2code2.png" width= 100%>
+              <img src="h2output2.png" width = 100%>
+              </div>
+
+                <p>Hierna was het tijd voor de tweede quiz. Deze ging erg goed, en ik haalde ook de volle 100%!</p>
+              <div class="quizfoto">
+              <img src="h2quiz.png" width= 80% >
+            </div>
+    </div>
+
+    <div class="line">
+      <hr width=100%>
+    </div>
+
+    <div class="hoofdstuk">
+      <h3>Hoofdstuk 3: Functions</h3>
+      <p>Hierna begon ik met het hoofdstuk “functies”. Aan het begin was dit wel te doen, maar ik had wel wat moeite met het “return” en het zogenaamde “function keyword”.
+         Ik heb de bijbehorende opdrachten dan ook opnieuw gemaakt (zie deze hieronder). Vervolgens leerde ik ook het verkorten van bepaalde codes. Ik vond het nog wel een 
+         beetje lastig qua volgorde, maar met voldoende oefening moet dit lukken. Ook leerde ik vandaag ook eindelijk hoe ik JavaScript kon runnen zonder hulp van CodeAcademy. 
+         Dat vond ik wel fijn, want dat is voor het maken van een website met JavaScript erin verwerkt wel handig. </p>
+
+         <div class="projecten">
+          <p>Projecten:</p>
+        </div>
+
+      <p>Hierna kwam er weer een project. Dit project ging over “rock, paper, scissors”. Ik had hier heel veel moeite mee, omdat ik wederom niet alles even makkelijk kon onthouden.
+         Ik heb hierdoor 3 keer deze opdrachten moeten doen en hierna begreep ik het redelijk. Mede hierdoor heb ik het programmaatje kunnen maken dat u ziet onderaan dit hoofdstuk.
+        Ik heb dit gebaseerd op Pokemon. Squirtle (water) verslaat Charmander (vuur), Charmander (vuur) verslaat Bulbasaur (gras) en Bulbasaur (gras) verslaat Squirtle (water). Verder is
+        Magikarp ook een optie. Je begint allebei op 6 Pokemon. De eerste die alle 6 de Pokemon van de tegenstander verslaat, wint de battle! </p>
+        
+            <div class="foto">
+            <img src="h3code.png" width= 100%>
+            <img src="h3output.png" width = 100%>
+          </div>
+
+          <p>Het volgende project ging over een “slaaprekenmachine”. Ook deze vond ik erg lastig en ga ik later opnieuw doen. Het bleef maar niet in m’n hoofd hangen wat waar precies moest.
+            Wel kreeg ik hem uiteindelijk af met een beetje hulp van “get unstuck”. Dit kwam eruit:
+           </p>
+             <div class="foto">
+              <img src="h3code2.png" width= 100%>
+              <img src="h3output2.png" width = 100%>
+              </div>
+
+              <p>Hierna deed ik wederom een quiz. Deze ging wel oke en ik had 8 van de 10 vragen goed, oftewel 80%:</p>
+              <div class="quizfoto">
+              <img src="h3quiz.png" width= 80% >
+            </div>
+    </div>
+    <div class= "pokemonh2">
+    <h2>Pokemon Battle:</h2>
+  </div>
+
+    
+  <section class="game">
+      
+    <div class="score">  
+        <div class="playerScore">
+            <h2>Jouw Pokemon:</h2>
+            <p class="p-count count">6</p>
+        </div>       
+        <div class="computerScore">
+            <h2>Pokemon rivaal:</h2>
+            <p class="c-count count">6</p>
+        </div>
+    </div>
+    
+    <div class="gamezelf">
+    <div class="move">Kies jouw Pokemon!</div>
+      
+    <div class="options">
+        <button class="squirtle">Squirtle</button>
+        <button class="charmander">Charmander</button>
+        <button class="bulbasaur">Bulbasaur</button>
+        <button class="magikarp">Magikarp</button>    
+    </div>
+      
+    <div class="result"></div>
+      
+    <button class="reload"></button>
+
+  </div>
+</div>
+</section>
+
+    <div class="line">
+      <hr width=100%>
+    </div>
+
+    <div class="hoofdstuk">
+      <h3>Hoofdstuk 4: Scope</h3>
+      <p>Ik begon met het opnieuw doen van de projecten van het volgende hoofdstuk. De avond ervoor had ik wat tutorials bekeken, en ik merkte gelijk dat het een stuk makkelijker ging. Waar ik de dag ervoor 1,5 uur per project mee bezig was, was het nu max een half uurtje per project. Dat is dus een goed teken.</p>
+      <p>Hierna was het de beurt aan hoofdstuk 4: Scope. Toen ik met de eerste les bezig was, begreep ik er werkelijk waar geen hol van. Ik heb het toen een beetje opgezocht op YouTube en ik begreep het wel weer wat beter. Het ging namelijk vooral over waar je precies de variabelen defineert. Buiten het zogenaamde ‘blok’ of in een blok. Met blok wordt bedoeld het stuk tussen de { en } in een functie. Ik vond dit wel ingewikkeld, maar ik besloot toch door te gaan naar het project om te kijken hoe dat zou gaan.</p>
+
+         <div class="projecten">
+          <p>Project:</p>
+        </div>
+
+      <p>Het project ging makkelijk, maar ik denk puur dat dat komt doordat je wel een beetje aan je handje word vastgehouden. Het project ging dus best goed. Dit project genereerde een trainingsschema voor de personen genaamd “Nala” en “Warren”. Dit werd random gedaan. Zie hieronder de code en wat het deed:</p></p>
+        
+            <div class="foto">
+            <img src="h4code.png" width= 100%>
+            <img src="h4output.png" width = 100%>
+          </div>
+          <p>Hierna was het echt tijd om mijn kennis van “scope” te testen met de quiz. Deze ging iets minder goed en ik had 4 van de 7 vragen goed, wat mij een score van 57% gaf. Ik heb hierna wat meer uitleg gevraagd aan een vriend van mij en hierna haalde ik toch de 100%! </p>
+              <div class="quizfoto">
+              <img src="h4quiz.png" width= 80% >
+            </div>
+    </div>
+
+    <div class="line">
+      <hr width=100%>
+    </div>
+
+    <div class="hoofdstuk">
+      <h3>Hoofdstuk 5: Arrays</h3>
+      <p>Na dit hoofdstuk begon het hoofdstuk “Arrays”. Arrays zijn lijsten die data bevatten. In dit hoofdstuk heb ik geleerd hoe ik bepaalde data uit een Array kon halen, erbij kon doen of hoe ik bepaalde data uit een lijst helemaal kon verwijderen. De les op zichzelf ging erg goed, alleen had ik vaak een beetje moeite met goed lezen. Ik las vaak over dingen heen als: “Je moet de data uit de lijst halen in 1 regel doen”. Ondertussen zat ik telkens met 2 regels bezig te zijn. </p>
+
+         <div class="projecten">
+          <p>Project:</p>
+        </div>
+
+      <p>Het project was niet erg lastig, maar je moest in 1 keer maar even weten welke codes je voor wat moest gebruiken en ik was er een paar vergeten. Ik heb dus wel een keertje in mijn schrift moeten spieken. Overigens ging het best aardig. Ik vond het ook erg leuk dat er uiteindelijk een soort bericht overbleef. Zie hieronder de code en wat het deed:</p>
+        
+            <div class="foto">
+            <img src="h5code.png" width= 100%>
+            <img src="h5output.png" width = 100%>
+          </div>
+
+          <p>Om te testen of ik het een beetje begreep, heb ik hierna gelijk de quiz gedaan. Zoals u ziet, heb ik 9 van de 10 vragen goed. Ik ga er dus vanuit dat ik de stof nu goed begrijp! </p>
+              <div class="quizfoto">
+              <img src="h5quiz.png" width= 80% >
+            </div>
+    </div>
+
+    <div class="line">
+      <hr width=100%>
+    </div>
+
+    <div class="hoofdstuk">
+      <h3>Hoofdstuk 6: loops</h3>
+      <p>Het was nu de beurt aan het volgende hoofdstuk: Loops. Dit is voor mij best een beetje een bekend hoofdstuk, want ik heb dit ook gehad toen ik Mechatronica studeerde. Toch was ik de codes wel weer een beetje vergeten. Zo was ik wel een tijdje bezig met opdracht 6 die te maken had met “nested loops”. Ook was ik best een tijdje bezig met opdracht 8, wat ging over do… while statements. Dit kwam niet doordat ik het zo lastig vond, maar ik draaide 2 dingen om waardoor het oneindig door ging. Na een paar keer rammen op m’n bureau omdat ik dacht dat de site niet reageerde, realiseerde ik me opeens waar het door kwam.  </p>
+
+         <div class="projecten">
+          <p>Project:</p>
+        </div>
+
+      <p>Hierna begon ik aan het project. Ik merkte dat vraag 3 al lastig voor me was en ik echt geen idee had wat er stond. Ik besloot de les dus opnieuw te doen in de hoop dat ik het dan wel beter zou begrijpen. Hierna deed ik het project en gelukkig ging deze een stuk beter. Wel ben ik van plan om deze later opnieuw te doen omdat ik het nog wel lastig vond. Je koos een zin uit en je maakte een programma van hoe een walvis dit zou uitspreken. Ik vond dit wel geinig. Zie hieronder de code en output:</p>
+        
+            <div class="foto">
+            <img src="h6code.png" width= 100%>
+            <img src="h6output.png" width = 100%>
+          </div>
+
+          <p>Hierna deed ik ook de quiz van dit hoofdstuk. Deze quiz ging goed en ik had 8 van de 9 vragen goed. Dit gaf mij een score van 88%: </p>
+              <div class="quizfoto">
+              <img src="h6quiz.png" width= 80% >
+            </div>
+    </div>
+
+    <div class="line">
+      <hr width=100%>
+    </div>
+
+    <div class="hoofdstuk">
+      <h3>Hoofdstuk 7: Iterators</h3>
+      <p>Het hoofdstuk hierna ging volledig over Iterators. Aan het begin had ik hier heel veel moeite mee. Het lukte mij maar niet om het te begrijpen. Ik had dus ook erg veel moeite met de lessen en laat staan het project. Ik heb vrienden van mij gevraagd om mij wat uit te leggen en het ging gelijk een stuk beter! Ik ging zo door de lessen heen en ik had daar niet erg veel moeite mee. Het project daarentegen vond ik wel wat lastiger en hier heb ik dan ook een keertje de video voor moeten gebruiken. Ik ben van plan om deze een keer opnieuw te doen, zodat ik het dan echt goed begrijp.</p>
+
+         <div class="projecten">
+          <p>Project:</p>
+        </div>
+
+      <p>Het project ging over een verhaal die je zo moest inkorten, dat je bepaalde woorden eruit moest halen en vervolgens deze woorden moest tellen. Ook moest je het aantal woorden en zinnen tellen. Zie hieronder de code en de output:</p>
+        
+            <div class="foto">
+            <img src="h7code.png" width= 100%>
+            <img src="h7output.png" width = 100%>
+          </div>
+
+          <p>Hierna ging ik de quiz doen. Ik had hier 6 van de 8 vragen goed wat betekende dat ik 75% gehaald had voor deze quiz. Ik ben ook van plan om deze nog een keer opnieuw te doen, want ik vond dit het moeilijkste hoofdstuk tot nu toe. Toch begrijp ik het best redelijk en denk ik dat ik klaar ben voor het volgende hoofdstuk. </p>
+              <div class="quizfoto">
+              <img src="h7quiz.png" width= 80% >
+            </div>
+    
+          <p>Na dit hoofdstuk was ik over de helft van de cursus. Tot nu toe ging het erg goed en vond ik het nog steeds erg leuk om te doen. Ik had van tevoren niet verwacht dat je zulke dingen kon doen met JavaScript. Het was tot nu toe ook wel makkelijker dan ik dacht, maar het laatste hoofdstuk vond ik dan wel erg lastig. Ik hoop dat dit niet betekent dat de aankomende hoofdstukken ook zo lastig worden, maar ik ben er wel bang voor.</p>
+        </div>
+
+    <div class="line">
+      <hr width=100%>
+    </div>
+
+    <div class="hoofdstuk">
+      <h3>Hoofdstuk 8: Objects</h3>
+      <p>Na 2 dagen even rust begon ik met het opnieuw doen van het project van het vorige hoofdstuk. Gelukkig ging dit een stuk beter! Dit betekende dat ik dus kon beginnen aan het hoofstuk “objects”. Ik merkte tijdens het volgen van de lessen dat ik snel de kleine dingetjes weer vergat. Ik vergat bijvoorbeeld vaak dat je, in bijvoorbeeld een if-statement, 3 keer = moest gebruiken. Ik deed er vaak 1, waardoor ik een error kreeg. Ook gebruikte ik vaak een dubbele punt in plaats van het = teken. Ik maak het mezelf wel erg lastig met dit soort kleine foutjes.   </p>
+
+         <div class="projecten">
+          <p>Projecten:</p>
+        </div>
+
+      <p>Het eerste project ging na het stellen van wat vragen wel goed. Je moest een programma maken die een random menu voor je samenstelt en hiervan de prijs ook berekent. En nee, ik denk niet serieus dat bloemkool in het engels "Flowercoal" is. Ik vond het wel droog ;)  Zie hier de code en de output. De output staat onder de code: </p>
+        
+            <div class="foto">
+            <img src="h8code.png" width= 100%>
+            <img src="h8output.png" width = 100%>
+          </div>
+
+          <p>Het tweede project van dit hoofdstuk ging over de spelers en uitslagen van een sportclub. Uiteindelijk was het de bedoeling dat je in dit programmaatje de spelers te zien krijgt en de uitslagen. Ik moet zeggen dat ik (ondanks dat ik het hoofdstuk best moeilijk vond) toch best makkelijk door deze opdracht heen ging. Zie hieronder het resultaat: </p>
+             <div class="foto">
+              <img src="h8code2.png" width= 100%>
+              <img src="h8output2.png" width = 100%>
+              </div>
+
+              <p>Het enige dat nog over was, was de quiz. Hierna was ik eindelijk van dit hoofdstuk af. Ik had 11 van de 14 vragen goed en daar ben ik tevreden mee, maar ik ben toch van plan om deze quiz later opnieuw te doen. Ik heb namelijk wel moeten gokken bij sommige vragen. Maar voor nu ben ik tevreden met 78%!</p>
+              <div class="quizfoto">
+              <img src="h8quiz.png" width= 80% >
+            </div>
+    </div>
+
+    <div class="line">
+      <hr width=100%>
+    </div>
+
+    <div class="hoofdstuk">
+      <h3>Hoofdstuk 9: Classes</h3>
+      <p>Het volgende hoofstuk was het hoofdstuk “classes”. De eerste les ging voor mij best makkelijk doordat het goed stap voor stap werd uitgelegd. Ik besloot alleen de volgorde van dit hoofdstuk anders te doen. Ik besloot na de les gelijk aan de quiz te beginnen. Op die manier kon ik zien of ik de kennis ervan heb voordat ik aan de projecten begon. Ik had van de 11 vragen er 7 goed, wat in mijn ogen niet al te best is. Hierom doe ik deze quiz nog een keer na het doen van de projecten:    </p>
+
+      <div class="quizfoto">
+        <img src="h9quiz1.png" width= 80% >
+      </div>
+
+         <div class="projecten">
+          <p>Projecten:</p>
+        </div>
+
+      <p>Het eerste project over ratings van films en boeken ging mij best redelijk af, maar dit kwam wederom vooral doordat het best wel in stappen uitgelegd werd. Het is best een lange code, dus ik vond het best lastig. Ik heb voor de 25 vragen 3 keer naar het uitlegfilmpje moeten kijken hierdoor. Uiteindelijk kwam ik wel op de goede code uit, maar ik ben van plan om (mits ik tijd ga hebben) dit project opnieuw te doen als het volgende project net zo gaat. Zie hieronder de code en de output: </p>
+        
+            <div class="foto">
+            <img src="h9code.png" width= 100%>
+            <img src="h9code1.png" width= 100%>
+            <img src="h9output.png" width = 100%>
+          </div>
+
+          <p>Hierna begon ik aan het tweede project. Dit ging best oké, ondanks dat ik wel weer een paar keer moest spieken. Het project gaat over een school die uiteindelijk aangaf hoeveel leerlingen er onderwijs krijgen per niveau. Ook kreeg je te zien welke sporten er gespeeld worden bij een bepaald niveau. Wat ik wel merkte, was dat ik heel vaak het “this” vergat bij het benoemen van bijvoorbeeld values. Dit is iets waar ik hard aan moet werken. Ook had ik bij beide projecten moeite met het eerste stuk met oa de getters, setters en het creëren van methods. Ook hier ga ik dus aan werken.  </p>
+             <div class="foto">
+              <img src="h9code2.png" width= 100%>
+              <img src="h9code3.png" width= 100%>
+              <img src="h9output2.png" width = 100%>
+              </div>
+
+              <p>Ik besloot na de projecten de quiz nogmaals te doen. Ik kwam hier op 81% uit. Ik had dus 9 van de 11 vragen goed!</p>
+              <div class="quizfoto">
+              <img src="h9quiz2.png" width= 80% >
+            </div>
+    </div>
+
+    <div class="line">
+      <hr width=100%>
+    </div>
+    
+    <div class="hoofdstuk">
+      <h3>Hoofdstuk 10: Browser Compatibility and Transpilation</h3>
+      <p>Dit was een heel ander hoofdstuk dan waar ik van tevoren op gerekend had. Je werkte namelijk nauwelijks in het js bestand, maar je maakte via de code nieuwe bestanden aan. Ook kreeg ik een nieuw soort bestand genaamd .json. Als ik heel eerlijk ben begreep ik er aan het begin werkelijk waar geen hol van, dus ik heb de les opnieuw gevolgd. </p>
+
+         <div class="projecten">
+          <p>Projecten:</p>
+        </div>
+
+      <p>Hierna begon ik aan het project en dit ging voor mijn gevoel best lekker. Ik wist nog niet echt hoe alles werkte met de nieuwe bestandtypes, dus dit is 1 plaatje geworden: </p>
+        
+            <div class="foto">
+            <img src="h10code.png" width= 100%>
+          </div>
+
+
+              <p>Om te testen of ik het echt goed begreep, heb ik hierna gelijk de quiz gedaan. Ik had hier 7 van de 11 vragen goed. Normaal gesproken zou ik zeggen dat dit tegen valt, maar er stonden ook vragen in als wat de organisatie is die de JavaScript taal standaardiseert. Dit klonk voor mij niet erg boeiend als ik heel eerlijk ben. Qua hetgeen dat ik ook daadwerkelijk moet toepassen had ik wel zo goed als alles goed, dus ik vind dit hoofdstuk geslaagd!</p>
+              <div class="quizfoto">
+              <img src="h10quiz.png" width= 80% >
+            </div>
+    </div>
+
+    <div class="line">
+      <hr width=100%>
+    </div>
+
+    <div class="hoofdstuk">
+      <h3>Hoofdstuk 11: Modules</h3>
+      <p>Hierna was het tijd voor het hoofdstuk modules. Dit was zonder twijfel het lastigste hoofdstuk tot nu toe. Ik begreep er werkelijk waar helemaal niets van. Ik besloot aan de les te beginnen, waar dan ook weer geen filmpje bij zat hoe het werkte. Op die manier kom je niet ver natuurlijk. Ik besloot het dus op een andere manier te doen. Ik heb de antwoorden gewoon gechecked als ik het echt niet wist. Ik nam deze over, las even goed wat precies de reden achter die code was en begon opnieuw met de opdracht. Uiteindelijk kwam ik na een tijdje wel door deze les heen. Er was geen project, dus ik ben gelijk aan de quiz begonnen. Ik had hier 8 van de 10 vragen goed. Op naar het volgende hoofdstuk! </p>
+        
+      <div class="quizfoto">
+        <img src="h11quiz.png" width= 80% >
+      </div>
+
+            <div class="line">
+              <hr width=100%>
+            </div>
+
+    <div class="hoofdstuk">
+      <h3>Hoofdstuk 12: Async-Await</h3>
+      <p>Hierna ging ik aan de slag met het volgende hoofdstuk "Async-Await". Ik merkte dat ik nog erg veel moeite had met het "bash" gedeelte. Het was vooral zo dat je bij deze cursus in 1 keer zo veel informatie op je afgevuurd krijgt, dat je het op een gegeven moment nog moeilijk kan bijbenen. Ik heb voor dit hoofdstuk een vriend van mij ingeschakeld die werk heeft binnen dit vakgebied. Hij heeft mij dit kunnen uitleggen en ik merkte dat het (samen met het opnieuw lezen van de lesstof) wel wat makkelijker werd. Ik ging met een beetje hulp van de antwoorden en weer opnieuw doen (net als in het vorige hoofdstuk) toch wel door de les heen en ik begreep het op dat moment wel redelijk. Hierna deed ik de quiz en ik denk dat ik met 6 van de 8 punten (oftewel 75%) wel een redelijk resultaat behaald heb.</p>
+        
+      <div class="quizfoto">
+        <img src="h12quiz.png" width= 80% >
+      </div>
+
+            <div class="line">
+              <hr width=100%>
+            </div>
+
+            <div class="hoofdstuk">
+      <h3>Hoofdstuk 12: Async-Await</h3>
+      <p>Hierna ging ik aan de slag met het volgende hoofdstuk "Async-Await". Ik merkte dat ik nog erg veel moeite had met het "bash" gedeelte. Het was vooral zo dat je bij deze cursus in 1 keer zo veel informatie op je afgevuurd krijgt, dat je het op een gegeven moment nog moeilijk kan bijbenen. Ik heb voor dit hoofdstuk een vriend van mij ingeschakeld die werk heeft binnen dit vakgebied. Hij heeft mij dit kunnen uitleggen en ik merkte dat het (samen met het opnieuw lezen van de lesstof) wel wat makkelijker werd. Ik ging met een beetje hulp van de antwoorden en weer opnieuw doen (net als in het vorige hoofdstuk) toch wel door de les heen en ik begreep het op dat moment wel redelijk. Hierna deed ik de quiz en ik denk dat ik met 6 van de 8 punten (oftewel 75%) wel een redelijk resultaat behaald heb.</p>
+        
+      <div class="quizfoto">
+        <img src="h12quiz.png" width= 80% >
+      </div>
+
+            <div class="line">
+              <hr width=100%>
+            </div>
+
+            <div class="hoofdstuk">
+              <h3>Hoofdstuk 13: Requests</h3>
+              <p>Uiteindelijk was ik aangekomen bij het laatste hoofdstuk van de cursus: Requests. Ik zat een beetje in de stress, want het was op dit moment al de zaterdag voor het inleveren van het verslag. Het was best een groot hoofdstuk, dus ik moest er echt goed voor zitten. Ik werd al snel vrolijk toen ik zag dat dingen als "Bash" er dit keer niet in zaten. Neem niet weg dat ik dit hoofdstuk veruit de meest ingewikkelde vond. De lessen gingen over het algemeen best oke, maar je wordt daar natuurlijk wel aan je handje vastgehouden. </p>
+        
+                 <div class="projecten">
+                  <p>Projecten:</p>
+                </div>
+        
+              <p>Het project ging over het verkrijgen van ID's van de "Foursquare API" en "OpenWeather API". Op basis van deze ID's was het de bedoeling dat je een reiswebsite zou maken waarin de gegevens over onder andere het weer op die plek zullen komen. Het probleem is dat ik niet verder kwam dan stap 13. Hiervoor ging het redelijk en ik besloot een beetje research te doen op het internet. Ik kwam toen een uitlegfilmpje uit die bij dit project paste en het bleek inderdaad goed te zijn wat ik tot stap 13 gedaan had. Bij stap 13 moest je de code gaan testen via het console gedeelte bij "inspecteren". Het probleem is dat het bij mij maar een error bleef geven. Helaas heb ik dit project dus niet af kunnen maken. Zie hieronder wat ik gedaan had, wat eruit kwam en wat de error code precies was: </p>
+                
+                    <div class="foto">
+                    <img src="h13code.png" width= 100%>
+                  </div>
+        
+              <p>Vervolgens ging ik aan de gang met de quizzen van dit hoofdstuk. Ik was een beetje pissig omdat het project niet goed gegaan was, maar toch deed ik hard mijn best om de laatste quizzen nog goed te doen. De eerste quiz ging niet heel goed, maar ik zie 55% als een 5,5 dus ik vind het een voldoende!</p>
+                      <p></p>
+                      <div class="quizfoto">
+                      <img src="h13quiz1.png" width= 80% >
+                    </div>
+
+              <p>De tweede quiz ging daarentegen wel wat beter. 5 van de 7 goed en dus 71% is een resultaat om blij mee te zijn.</p>
+                      <p></p>
+                      <div class="quizfoto">
+                      <img src="h13quiz2.png" width= 80% >
+                    </div>
+            </div>
+        
+            <div class="line">
+              <hr width=100%>
+            </div>
+    </div>
+
+            <div class="einde">
+              <h3>Einde cursus!</h3>
+              <p>Achteraf ben ik veel langer dan die 30 uur bezig geweest, maar ik denk dat ik erg veel geleerd heb van deze cursus. Ik weet het, officieel heb ik de cursus niet behaald door het project in het laatste hoofdstuk. Maar ik denk dat ik het certificaat wel verdien na al die uren die ik erin gestoken heb:</p>
+              <div class="certificaat">
+                <img src="certificaat.png" width= 80% >
+              </div>
+            </div>
+  </section>
+  <script src="pokemonbattle.js"></script>
+</body>
+</html>

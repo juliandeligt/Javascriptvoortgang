@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #131111;
+}
+
+nav {
+    margin: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    background-color: black;
+    height: 12vh;
+    position: relative;
+  }
+
+  .hero {
+      background-image: url("javaachtergrond.jpeg");
+      height: 40vh;
+      width: 90%;
+      margin: auto;
+  }
+
+  .hero p {
+    font-family: poppins;
+    font-size: 80px;
+    color: white;
+    margin-left: 135px;
+    padding-top: 115px;
+  }
+
+  .tekstvak {
+      margin: auto;
+      background-color: #FCF7F7;
+      width: 55%;
+      height: 45vh;
+  }
+
+  .tekstvak p {
+      margin: auto;
+      padding-top: 45px;
+      font-family: poppins;
+      font-size: 25px;
+      width: 60%;
+  }
+
+  .hoofdstukken {
+    margin-top: 90px;
+  }
+
+  .hoofdstuk h3 {
+    margin: auto;
+    padding-top: 45px;
+    font-family: poppins;
+    font-size: 30px;
+    width: 90%;
+    color: white;
+  }
+
+  .hoofdstuk p {
+    margin: auto;
+    padding-top: 20px;
+    font-family: poppins;
+    font-size: 15px;
+    padding: 5px;
+    width: 90%;
+    color: white;
+  }
+
+  .foto {
+    margin-left: 250px;
+    margin-top: 20px;
+    height: 78vh;
+    overflow: scroll;
+    width: 70%;
+    padding-left: auto;
+  }
+
+  .quizfoto {
+        margin-left: 350px;
+        margin-top: 20px;
+        height: 70vh;
+        width: 70%;
+  }
+
+  .projecten p{
+      font-weight: bold;
+      font-size: 20px;
+  }
+
+  .hoofdstuk p {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  .line {
+    margin-top: 20px;
+  }
+
+  input {
+    height: 50px;
+    width: 250px;
+    font-size: 30px;
+  }
+
+  .operators {
+    height: 50px;
+    width: 40px;
+  }
+
+  .rekenmachine {
+    margin-top: 80px;
+    padding-left: 150px;
+    padding-top: 100px;
+    background-color: #F9F1F1;
+    height: 300px;
+    width: 600px;
+    margin: auto;
+  }
+
+  .rekenmachine2 {
+    margin-top: -60px;
+  }
+
+  .rekenmachine button {
+    height: 50px;
+    width: 40px;
+  }
+
+  .rekenmachine h2 {
+    font-size: 50px;
+  }
+
+  #n1, #n2 {
+    margin-bottom: 5px;
+  }
+
+  .game {
+    margin: auto;
+    background-image: url("Pokeball.png");
+    background-position: center;
+    background-size: cover;
+    height: 450px;
+    width: 450px;
+    padding-top: 150px;
+    padding-left: 100px;
+  }
+
+  .pokemonh2 {
+    color: white;
+    margin-left: 680px;
+    font-size: 50px;
+  }
+
+    .score {
+      color: white;
+      margin-top: -90px;
+      margin-left: -95px;
+      text-align: center;
+    }
+
+    .gamezelf {
+      color: black;
+      margin-top: 180px;
+      margin-left: -95px;
+      text-align: center;
+    }
+
+    .reload {
+      margin-left: 165px;
+      margin-top: 10px;
+    }
+
+    .certificaat {
+      margin-left: 360px;
+      margin-top: 20px;
+      margin-bottom: 200px;
+      height: 70vh;
+      width: 70%;
+}
